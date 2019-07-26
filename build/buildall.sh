@@ -8,7 +8,7 @@
 
 CUR_DIR=`pwd`
 BLD_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-cd ${BLD_DIR}
+cd ${BLD_DIR}/..
 
 # Enumerate all sub directories and call build.sh correspondingly
 for sub in */; do
