@@ -49,6 +49,14 @@ fn main() {
     println!("Hello, {}!", name);
 }
 ```
+- Do you have any questions? 
+  - Return value? <!-- .element: class="fragment" -->
+  - Arguments? <!-- .element: class="fragment" -->
+  - Variable Type? <!-- .element: class="fragment" -->
+  - Function? 'println!'? <!-- .element: class="fragment" -->
+  - How to print '{}'? <!-- .element: class="fragment" -->
+  - How many bytes for the compiled binary? <!-- .element: class="fragment" -->
+  - The linkage of the compiled binary? <!-- .element: class="fragment" -->
 
 ---
 
@@ -246,19 +254,62 @@ fn main() {
 
 ---
 
-## Back to Hello Rust
-```
-fn main() {
-    let name="Rust";
-    println!("Hello, {}!", name);
-}
-```
-- Do you have any questions? 
-  - Return value?
-  - Arguments?
-  - Variable Type?
-  - Function? 'println!'?
-  - How to print '{}'?
-  - How many bytes for the compiled binary?
-  - The linkage of the compiled binary?
+## What is Common - Variable
+
+- Immutable Variable
+  ```rust
+  let x = 5; 
+  ```
+- Shadowing
+  ```rust
+  let x = 5;
+  let x = 8;
+  let x = x + 1;
+  let x = x * 2;
+  let x = "Type Changed";
+  let x = 3.14;
+  ```
+- Constants
+  ```rust
+  const JSTC_HC: u32 = 10;
+  ```
+  Constant must have types, why?
+- Mutable Variable
+  ```rust
+  let mut x = 5;
+  x = 6;
+  ```
+
+---
+
+## What is Common - Types - Scalar - Integer
+
+| Length  | Signed | Unsigned |
+| ------- | ------ | -------- |
+| 8-bit   | i8     | u8       |
+| 16-bit  | i16    | u16      |
+| 32-bit  | i32    | u32      |
+| 64-bit  | i64    | u64      |
+| 128-bit | i128   | u128     |
+| arch    | isize  | usize    |
+|         |        |          |
+
+---
+
+## What is Common - Types - Scalar - Integer - Example
+
+
+| Number literals | Example     |
+| --------------- | -------     |
+| Decimal         | 98_222      |
+| Hex             | 0xff        |
+| Octal           | 0o77        |
+| Binary          | 0b1111_0000 |
+| Byte (u8 only)  | b'A'        |
+|                 |             |
+
+
+---
+
+## Q & A
 
